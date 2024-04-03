@@ -1,0 +1,68 @@
+
+footer{
+    background-color: #115da0;
+    }
+  form {
+    width: 85%;
+    min-height: auto;
+    max-height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+    p{
+        width: 90%; 
+        margin: 0 auto; 
+        padding: 10px; 
+        font-size: 16px;
+       color: steelblack;
+    }
+    button {
+        background-color: lightgray;
+        color: black;
+        border: none;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    a
+    {
+        color: white;
+    }
+    button:hover {
+        background-color: #115da0;
+        color: white;
+    }
+    .box {
+        border: 1px solid lightgreen;
+        font-size: 15px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #cdcdcd;
+    }
+
+    .left-column
+    {
+        width: 70%;
+        float: left;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .right-column {
+        width: 30%;
+        float: left;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .box1 {
+        border: 1px solid #cdcdcd ;
+        height:auto;
+    }
+    a:hover{
+        text-decoration: underline;
+    }

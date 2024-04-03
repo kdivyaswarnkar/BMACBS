@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<form>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MEDIENROLL - Your Page Title</title>
+    </head>
+
+    <body>
+        <header style="color: white; text-align: right;">
+            <div style="float: left;">
+                <img class="logo" src="assets/IMG/manager_logo.png">
+            </div>
+            <p style="color: black; text-align: right; margin-right: auto; font-size: 20px;">Bheemunipatnam Mutually
+                Aided Co-operative Building Society Ltd., 2443</p>
+
+            <button (click)="navigateToLogin()"
+                style="border-radius: 5px; color: #fff; background-color: #337ab7; border-color: #2e6da4; font-size: 16px; padding: 10px 20px;">Member
+                Login</button>
+
+            <div style="background-color: lightgray; text-align: left; padding: 10px 20px; margin-top: 10px;">
+                <button (click)="navigateToHome()" style="width: 80px; height: 40px; font-size: 16px;">Home</button>
+                <button (click)="navigateToAboutUs()" style="width: 90px; height: 40px; font-size: 16px;"> About
+                    Us</button>
+                <button (click)="navigateToschemes()" style="width: 90px; height: 40px; font-size: 16px;">
+                    Schemes</button>
+                <button (click)="navigateToSocietyEvolution()" style="width: auto; height: 40px; font-size: 16px;">
+                    Socity Evolution</button>
+                <button (click)="navigateToMembershipAdmission()"
+                    style="width: 200px; height: 40px; font-size: 16px;">Membership Admission</button>
+                <button (click)="navigateToManagenebtboard()" style="width: auto; height: 40px; font-size: 16px;">
+                    Management Board</button>
+                <button (click)="navigateToBasicStatitics()" style="width: 120px; height: 40px; font-size: 16px;"> Basic
+                    Statitics</button>
+                <button (click)="navigateTocontactus()" style="width: auto; height: 40px; font-size: 16px;"> Contact
+                    us</button>
+                <button (click)="navigateTogallery()" style="width: 90px; height: 40px; font-size: 16px;">
+                    Gallery</button>
+                <button (click)="navigateTofeedback()" style="width: 90px; height: 40px; font-size: 16px;"> Feed
+                    Back</button>
+            </div>
+        </header>
+        <br>
+        <main>
+            <div class="container">
+                <h1
+                    style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">
+                    Contact Us - It's Easy</h1>
+                <div class="left-column">
+
+                    <h2
+                        style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">
+                        Society Office Address</h2>
+                    <h3 style="padding: 10px; margin: 0; font-size: 16px; text-align: left;"><b>Bheemunipatnam Mutually
+                        Aided Co-operative Building Society Ltd. 2443</b></h3>
+                    <pre
+                        style="padding: 10px; margin: 0; font-size: 15px;">D.no 10-36-284, Krishna Colony Bus Stop,<br>Krishna Colony, Bheemunipatnam – 531 163<br>Land Mark: near Yoga Center, Sand Reach Point<br>Visakhapatnam District<br>Andhra Pradesh.<br><strong>Tel</strong>: 08933 - 228234 (or) 8341327640 / 9642726662<br><strong>E-mail</strong>: president.bcbs@gmail.com (or) info@bmacbs.com </pre>
+                    <a href="http://www.bmacbs.com" style="padding: 10px; margin: 0;">www.bmacbs.com</a>
+
+                    <div class="box">
+                        <p>Visiting Hours: 10:30 AM to 4:30 PM</p>
+                        <p>Every Tuesday is a holiday for the Society Office.</p>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div style="display: block;">
+                        <img class="Logo" src="assets/IMG/bmacbs-office.png" alt="Society Office Logo">
+                    </div>
+                    <div class="box1">
+                        <div style="display: flex; align-items: center;">
+                            <pre style="padding: 15px; margin: 0; font-size: 15px;">Enter Your Location</pre>
+                            <input type="text" style="margin: 0; padding: 10px;"
+                                placeholder="Enter Your Location here" />
+                            <br>
+
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="button"
+                                style="margin: 0; padding: 5px; border-radius: 5px; background-color: #337ab7; height: 40px;width: 500px; color: white;">Get
+                                Directions from Society Office</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="box" style="text-align: center;">
+                        <pre
+                            style=" font-size: 13px;">Pleaes give your valuable feedback, queries, suggestions, enquiries </pre>
+                        <button (click)="navigateTofeedback()"
+                            style="padding: 1px 5px; font-size: 12px; line-height: 1.5; border-radius: 3px; background-color: #5bc0de;color: white;">Here</button>
+                    </div>
+                </div>
+<div>
+    <h1 style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">Society Office Holidays</h1>
+    <br>
+    <table style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">#</th>
+                <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Date</th>
+                <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Day</th>
+                <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">FestivalOccasion</th>         
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let holiday of holidays;">
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{holiday.SlNo}}</td>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{holiday.Date}}</td>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{holiday.Day}}</td>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{holiday.FestivalOccasion }}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<div>
+    <h1 style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">Society Office Staff Members</h1>
+    <br>
+    <table style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">#</th>
+                <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Staff Name</th>
+                <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Designation</th>       
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Staff of Staff;">
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{Staff.ID}}</td>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{Staff.Name}}</td>
+                <td style="border: 1px solid #dddddd; padding: 8px;">{{Staff.Designation}}</td>
+               
+            </tr>
+        </tbody>
+    </table>
+</div>
+                <div style="clear: both;"></div>
+            </div>
+        </main>
+        <br>
+        <footer style="color: white; text-align: left;">
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block;">
+                    <img class="logo" src="assets/IMG/manager_logo.png">
+                </div>
+                <div style="margin-left: auto; font-size: 18px;">
+                    <a (click)="navigateToDisclaimer()" >Disclaimer</a> |
+                    <a (click)="navigateToAboutUs()" >About Us</a> |
+                    <a (click)="navigateToschemes()" >Schemes</a> |
+                    <a (click)="navigateTofeedback()" >Feedback</a> |
+                    <a >Events Calendar</a> |
+                    <a >Press Releases</a>
+                    <br>
+                    <div style="text-align: right;">
+                        <button (click)="navigateToLogin()"
+                            style="color: #fff; background-color: #5cb85c; border-radius: 5px; font-size: 16px; padding: 10px 20px; border-color: #4cae4c; margin-right: auto;">Support</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block; margin-right: 10px;">
+                    Bheemunipatnam Mutually Aided Co-operative Building Society Ltd., 2443<br>
+                    D.no 10-36-284,Krishna Colony Bus Stop, Krishna Colony, Bheemunipatnam – 531 163<br>
+                    Phone: 08933 - 228234 or 228334 or (+91) 8341327640 / 9642726662
+                </div>
+            </div>
+
+            <p style="color:white;text-align: center;">© 2024 BMACBS.com | All rights reserved | Designed & Developed by BMACBS</p>
+
+        </footer>
+
+    </body>
+</form>
+
+

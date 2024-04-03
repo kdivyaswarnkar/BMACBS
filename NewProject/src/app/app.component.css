@@ -1,0 +1,30 @@
+
+footer{
+background-color: #115da0;
+}
+form{
+    width: 80%; 
+    height: 100%;
+    margin: 0 auto; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+}
+p{
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 10px; 
+    font-size: 18px;
+   color: steelblack;
+}
+button {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #115da0;
+    color: white;
+}

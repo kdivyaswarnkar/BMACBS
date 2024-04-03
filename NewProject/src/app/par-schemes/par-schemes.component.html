@@ -1,0 +1,33 @@
+<div class="container">
+    <h2
+        style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">
+        PARTICULARS OF SCHEMES</h2>
+    <div class="left-column">
+
+        <h2
+            style="padding: 10px; margin: 0; color: red; text-align: left;">
+            Annexure 2 ( Particulars of the Schemes )</h2>
+<div>
+    <table style="border-collapse: collapse; width: 100%;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">SLNo</th>
+            <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Name of the Scheme</th>
+            <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Year of Launching</th>
+            <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Year of Completion</th>
+            <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Extent (In Rs.)</th>
+            <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">No. of members as on 01-04-2015</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let scheme of schemes;">
+            <td style="border: 1px solid #dddddd; padding: 8px;">{{ scheme.SLNo }}</td>
+            <td style="border: 1px solid #dddddd; padding: 8px;">{{ scheme.NameOfScheme }}</td>
+            <td style="border: 1px solid #dddddd; padding: 8px;">{{ scheme.YearOfLaunching }}</td>
+            <td style="border: 1px solid #dddddd; padding: 8px;">{{ scheme.YearOfCompletion }}</td>
+            <td style="border: 1px solid #dddddd; padding: 8px;">{{ scheme.Extent }}</td>
+            <td style="border: 1px solid #dddddd; padding: 8px;">{{ scheme.NoOfMembers }}</td>
+          </tr>
+        </tbody>
+      </table>
+    

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<form>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MEDIENROLL - Your Page Title</title>
+    </head>
+
+    <body>
+        <header style="color: white; text-align: right;">
+            <div style="float: left;">
+                <img class="logo" src="assets/IMG/manager_logo.png">
+            </div>
+            <p style="color: black; text-align: right; margin-right: auto; font-size: 20px;">Bheemunipatnam Mutually
+                Aided Co-operative Building Society Ltd., 2443</p>
+
+            <button (click)="navigateToLogin()"
+                style="border-radius: 5px; color: #fff; background-color: #337ab7; border-color: #2e6da4; font-size: 16px; padding: 10px 20px;">Member
+                Login</button>
+
+            <div style="background-color: lightgray; text-align: left; padding: 10px 20px; margin-top: 10px;">
+                <button (click)="navigateToHome()" style="width: 80px; height: 40px; font-size: 16px;">Home</button>
+                <button (click)="navigateToAboutUs()" style="width: 90px; height: 40px; font-size: 16px;"> About
+                    Us</button>
+                <button (click)="navigateToschemes()" style="width: 90px; height: 40px; font-size: 16px;">
+                    Schemes</button>
+                <button (click)="navigateToSocietyEvolution()" style="width: auto; height: 40px; font-size: 16px;">
+                    Socity Evolution</button>
+                <button (click)="navigateToMembershipAdmission()"
+                    style="width: 200px; height: 40px; font-size: 16px;">Membership Admission</button>
+                <button (click)="navigateToManagenebtboard()" style="width: auto; height: 40px; font-size: 16px;">
+                    Management Board</button>
+                <button (click)="navigateToBasicStatitics()" style="width: 120px; height: 40px; font-size: 16px;"> Basic
+                    Statitics</button>
+                <button (click)="navigateTocontactus()" style="width: auto; height: 40px; font-size: 16px;"> Contact
+                    us</button>
+                <button (click)="navigateTogallery()" style="width: 90px; height: 40px; font-size: 16px;">
+                    Gallery</button>
+                <button (click)="navigateTofeedback()" style="width: 90px; height: 40px; font-size: 16px;">
+                    Feedback</button>
+            </div>
+        </header>
+        <br>
+        <main>
+            <div style="width: 90%; margin: 0 auto; padding: 10px; box-sizing: border-box; border: 1px solid #cdcdcd;">
+                <h1
+                    style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: center;">
+                    About Us</h1>
+                <p><strong>1. </strong>Bheemunipatnam Mutually Aided Co-operative Building Society (BCBS) is a
+                    Co-operative Society established on 29th May, 1970 with a laudable objective of providing impetus to
+                    the growth of the first Municipality of the State of Andhra Pradesh (Second Municipality of the
+                    country) through its activities and presently registered under the Mutually Aided Co-operative
+                    Societies Act, 1995 of the state of Andhra Pradesh. Its main aim is to serve its members on a
+                    non-commercial basis and provide the possible services in an economical way without aspiring to earn
+                    profit from its activities and serve the community in a limited humble way. It is managed by a
+                    'Management Board' consisting of 10 elected Directors as per the provisions of the Act and the
+                    Bye-Laws framed under the Act.</p>
+                <p><strong>2. </strong>It has 1,652 members on its rolls as on 01-04-2013. Any citizen of India, in
+                    sound mind and not a minor, resident or native of the areas in the districts of Visakhapatnam,
+                    Vizianagaram and Srikakulam of Andhra Pradesh, is eligible to be admitted as a member of the Society
+                    subject to the fulfilment of the provision of the Bye-Laws of the Society. Its current policy is to
+                    limit the membership to the extent of plots that the Society can allot and admit new members for the
+                    plots planned by it from time to time. Presently, it has six schemes on its hands. Of these, it has
+                    fully completed and allotted plots to 246 members in two schemes. It proposes to complete another
+                    two Schemes, one for 300 members by December, 2014 and another for 1400 members by December, 2015.
+                    Another two Schemes are in the nascent stage and may come into operation by mid 2014.</p>
+                <p><strong>3. </strong>Thus, the Society is a no profit – no loss social service oriented entity,
+                    functioning as a "Corporate" with the sole objective to serve the community, at large.</p>
+            </div>
+        </main>
+        <br>
+        <br>
+        <footer style="color: white; text-align: left;">
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block;">
+                    <img class="logo" src="assets/IMG/manager_logo.png">
+                </div>
+                <div style="margin-left: auto; font-size: 18px;">
+                    <a (click)="navigateToDisclaimer()" routerLink="/Disclaimer">Disclaimer</a> |
+                    <a (click)="navigateToAboutUs()">About Us</a> |
+                    <a (click)="navigateToschemes()" routerLink="/Schemes">Schemes</a> |
+                    <a (click)="navigateTofeedback()" routerLink="/Feedback">Feedback</a> |
+                    <a routerLink="/EventsCalendar">Events Calendar</a> |
+                    <a routerLink="/PressReleases">Press Releases</a>
+                    <br>
+                    <div style="text-align: right;">
+                        <button (click)="navigateToLogin()"
+                            style="color: #fff; background-color: #5cb85c; border-radius: 5px; font-size: 16px; padding: 10px 20px; border-color: #4cae4c; margin-left: 10px;">Support</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block; margin-right: 10px;">
+                    Bheemunipatnam Mutually Aided Co-operative Building Society Ltd., 2443<br>
+                    D.no 10-36-284,Krishna Colony Bus Stop, Krishna Colony, Bheemunipatnam – 531 163<br>
+                    Phone: 08933 - 228234 or 228334 or (+91) 8341327640 / 9642726662
+                </div>
+            </div>
+
+            <p style="color:white;text-align: center;">© 2024 BMACBS.com | All rights reserved | Designed & Developed by
+                BMACBS</p>
+
+        </footer>
+
+    </body>
+</form>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<form>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MEDIENROLL - Your Page Title</title>
+    </head>
+
+    <body>
+        <header style="color: white; text-align: right;">
+            <div style="float: left;">
+                <img class="logo" src="assets/IMG/manager_logo.png">
+            </div>
+            <p style="color: black; text-align: right; margin-right: auto; font-size: 20px;">Bheemunipatnam Mutually
+                Aided Co-operative Building Society Ltd., 2443</p>
+
+           <button (click)="navigateToLogin()"
+                style="border-radius: 5px; color: #fff; background-color: #337ab7; border-color: #2e6da4; font-size: 16px; padding: 10px 20px;">Member
+                Login</button>
+ 
+            <div style="background-color: lightgray; text-align: left; padding: 10px 20px; margin-top: 10px;">
+                <button (click)="navigateToHome()" style="width: 80px; height: 40px; font-size: 16px;">Home</button>           
+                <button (click)="navigateToAboutUs()" style="width: 90px; height: 40px; font-size: 16px;"> About Us</button>
+                <button (click)="navigateToschemes()" style="width: 90px; height: 40px; font-size: 16px;"> Schemes</button>
+                <button (click)="navigateToSocietyEvolution()" style="width: auto; height: 40px; font-size: 16px;"> Socity Evolution</button>
+                <button (click)="navigateToMembershipAdmission()" style="width: 200px; height: 40px; font-size: 16px;">Membership Admission</button>
+                <button (click)="navigateToManagenebtboard()" style="width: auto; height: 40px; font-size: 16px;"> Management Board</button>
+                <button (click)="navigateToBasicStatitics()" style="width: 120px; height: 40px; font-size: 16px;"> Basic Statitics</button>
+                <button (click)="navigateTocontactus()" style="width: auto; height: 40px; font-size: 16px;"> Contact us</button> 
+                <button  (click)="navigateTogallery()" style="width: 90px; height: 40px; font-size: 16px;"> Gallery</button>
+                <button (click)="navigateTofeedback()" style="width: 90px; height: 40px; font-size: 16px;"> Feedback</button>
+            </div>
+        </header>
+        <br>
+<main>
+    <div style="width: 90%; margin: 0 auto; padding: 10px; box-sizing: border-box; border: 1px solid #cdcdcd;">
+    <h1 style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: center;">Disclaimer for BMACBS website</h1>
+    <p>The information contained in this website is for general information purposes only. The information is provided by BMACBS and while we Endeavour to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
+    <p>In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arise out of, or in connection with, the use of this website.</p>
+    <p>Through this website you are able to link to other websites which are not under the control of BMACBS. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
+<p>Every effort is made to keep the website up and running smoothly. However, BMACBS takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.</p>
+
+</div>
+</main>
+        <br>
+        <br>
+        <footer style="color: white; text-align: left;">
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block;">
+                    <img class="logo" src="assets/IMG/manager_logo.png">
+                </div>
+                <div style="margin-left: auto; font-size: 18px;">
+                    <a (click)="navigateToDisclaimer()" routerLink="/Disclaimer">Disclaimer</a> |
+                    <a (click)="navigateToAboutUs()" routerLink="/AboutUs">About Us</a> |
+                    <a (click)="navigateToschemes()" routerLink="/Schemes">Schemes</a> |
+                    <a (click)="navigateTofeedback()" routerLink="/Feedback">Feedback</a> |
+                    <a routerLink="/EventsCalendar">Events Calendar</a> |
+                    <a routerLink="/PressReleases">Press Releases</a>
+                    <br>
+                    <div style="text-align: right;">
+                        <button (click)="navigateToLogin()"
+                            style="color: #fff; background-color: #5cb85c; border-radius: 5px; font-size: 16px; padding: 10px 20px; border-color: #4cae4c; margin-right: auto;">Support</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block; margin-right: 10px;">
+                    Bheemunipatnam Mutually Aided Co-operative Building Society Ltd., 2443<br>
+                    D.no 10-36-284,Krishna Colony Bus Stop, Krishna Colony, Bheemunipatnam – 531 163<br>
+                    Phone: 08933 - 228234 or 228334 or (+91) 8341327640 / 9642726662
+                </div>
+            </div>
+
+            <p style="color:white;text-align: center;">© 2024 BMACBS.com | All rights reserved | Designed & Developed by BMACBS</p>
+
+        </footer>
+
+
+    </body>
+</form>
+
+</html>

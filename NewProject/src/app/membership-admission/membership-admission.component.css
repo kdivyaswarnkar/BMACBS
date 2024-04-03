@@ -1,0 +1,48 @@
+
+footer{
+    background-color: #115da0;
+    }
+  form {
+    width: 85%;
+    min-height: auto;
+    max-height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+    p{
+        width: 90%; 
+        margin: 0 auto; 
+        padding: 10px; 
+        font-size: 16px;
+       color: steelblack;
+    }
+    button {
+        background-color: lightgray;
+        color: black;
+        border: none;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    a
+    {
+        color: white;
+    }
+    button:hover {
+        background-color: #115da0;
+        color: white;
+    }
+
+    .numbered-paragraph {
+        margin-bottom: 20px;
+    }
+    
+    .numbered-paragraph p::before {
+        content: ".";
+        margin-right: 5px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    

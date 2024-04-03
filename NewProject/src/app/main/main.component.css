@@ -1,0 +1,51 @@
+
+footer{
+    background-color: #115da0;
+    }
+    form {
+        width: 85%;
+        min-height: auto;
+        max-height: auto;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    p{
+        width: 90%; 
+        margin: 0 auto; 
+        padding: 10px; 
+        font-size: 16px;
+       color: black;
+    }
+    button {
+        background-color: lightgray;
+        color: black;
+        border: none;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    a
+    {
+        color: white;
+    }
+    button:hover {
+        background-color: #115da0;
+        color: white;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+    .Logo {
+        width: 84vw; /* 50% of the viewport width */
+        /* max-width: 1306px; Maximum width of 1306px */
+        height: auto; /* Maintain aspect ratio */
+    }
+   
+    .menu-container button {
+        width: auto; /* Let the button width adjust based on content */
+        height: 40px;
+        font-size: 16px;
+    }
+    

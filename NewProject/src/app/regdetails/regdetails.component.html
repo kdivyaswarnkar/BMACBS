@@ -1,0 +1,27 @@
+
+<div>
+<h1
+style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">
+Registration Deails</h1>
+<div class="left-column">
+
+<h2
+    style="padding: 10px; margin: 0; color: red; text-align: left;">
+    Annexure 1 ( Registraion Particulars )</h2>
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+      <tr>
+        <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">#</th>
+        <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Date</th>
+        <th style="border: 1px solid #dddddd; padding: 5px; text-align: left;">Day</th>                    
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let basicItem of Basic;">
+        <td style="border: 1px solid #dddddd; padding: 8px;">{{basicItem.SNo}}</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">{{basicItem.Particulars}}</td>
+        <td style="border: 1px solid #dddddd; padding: 8px;">{{basicItem.Value}}</td>                        
+      </tr>
+    </tbody>
+  </table>
+</div>

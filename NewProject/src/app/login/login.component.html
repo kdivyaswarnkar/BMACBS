@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<form>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MEDIENROLL - Your Page Title</title>
+    </head>
+
+    <body>
+        <header style="color: white; text-align: right;">
+            <div style="float: left;">
+                <img class="logo" src="assets/IMG/manager_logo.png">
+            </div>
+            <p style="color: black; text-align: right; margin-right: auto; font-size: 20px;">Bheemunipatnam Mutually
+                Aided Co-operative Building Society Ltd., 2443</p>
+
+           <button (click)="navigateToLogin()"
+                style="border-radius: 5px; color: #fff; background-color: #337ab7; border-color: #2e6da4; font-size: 16px; padding: 10px 20px;">Member
+                Login</button>
+ 
+            <div style="background-color: lightgray; text-align: left; padding: 10px 20px; margin-top: 10px;">
+                <button (click)="navigateToHome()" style="width: 80px; height: 40px; font-size: 16px;">Home</button>           
+                <button (click)="navigateToAboutUs()" style="width: 90px; height: 40px; font-size: 16px;"> About Us</button>
+                <button (click)="navigateToschemes()" style="width: 90px; height: 40px; font-size: 16px;"> Schemes</button>
+                <button (click)="navigateToSocietyEvolution()" style="width: auto; height: 40px; font-size: 16px;"> Socity Evolution</button>
+                <button (click)="navigateToMembershipAdmission()" style="width: 200px; height: 40px; font-size: 16px;">Membership Admission</button>
+                <button (click)="navigateToManagenebtboard()" style="width: auto; height: 40px; font-size: 16px;"> Management Board</button>
+                <button (click)="navigateToBasicStatitics()" style="width: 120px; height: 40px; font-size: 16px;"> Basic Statitics</button>
+                <button (click)="navigateTocontactus()" style="width: auto; height: 40px; font-size: 16px;"> Contact us</button> 
+                <button  (click)="navigateTogallery()" style="width: 90px; height: 40px; font-size: 16px;"> Gallery</button>
+                <button (click)="navigateTofeedback()" style="width: 90px; height: 40px; font-size: 16px;"> Feedback</button>
+            </div>
+        </header>
+<br>
+        <main>
+            <div class="container">
+                <h1
+                    style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">
+                    Schemes</h1>
+                    <div class="left-column">
+                        <h2 style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">
+                            Schemes Introduction</h2>
+                        <p style="padding: 10px; margin: 0; font-size: 12px;">The Society is a no profit - no loss social service oriented entity, functioning as a "Corporate" with the sole objective to serve the community, at large.</p>
+                        <div style="text-align: center;">
+                            <img class="logo" src="assets/IMG/site_logo_round.png">
+                        </div>
+                        <div class="login-container">
+                            <form (ngSubmit)="onSubmit()" style="max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9;">
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                  <input type="text" placeholder="Enter Username" id="username" name="username" [(ngModel)]="username" required style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                  <input type="password" placeholder="Enter Password" id="password" name="password" [(ngModel)]="password" required style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 3px;">
+                                </div>
+                                <button type="submit" style="display: block; width: 100%; padding: 8px; margin-top: 10px; margin-right: 500054px; border: none; border-radius: 3px; background-color: #007bff; color: #fff; font-weight: bold;">Login</button>
+
+                              </form>
+                              <div *ngIf="error" class="error-message" style="color: #dc3545; margin-top: 10px;">{{ error }}</div>
+                            </div>
+                    </div>
+                    
+                <div class="right-column">
+                    
+                        <br>
+                    <div class="box1">
+                        <div style="display: flex; flex-direction: column; align-items: lef; font-size: 15px;">
+                            <h2
+                        style="padding: 10px; margin: 0; border-bottom: 1px solid lightgreen; color: #3D1567; text-align: left;">
+                        Instructions to Login</h2>
+                        <ol style="font-size: 15px;">
+                            <li>The Username for Login is the G.L.No of the member given by Society.</li>
+                            <li>The G.L.No should be Four digited Number.</li>
+                            <li>Ex: if G.L.No is 6 then the member username should be used as 0006.</li>
+                            <li>The Password was sent to your Registered Mobile Number or Email.</li>
+                            <li>The Password is Case Sensitive.</li>
+                            <li>For more details please contact at Society Office.</li>
+                        </ol>
+                        
+                            <div style="text-align: center;">
+                                <button  
+                                    style="padding: 1px 5px; font-size: 15px; line-height: 1.5; border-radius: 3px; background-color: #2e6da4;color: white;">Get Password</button>
+                                    <button (click)="navigateTocontactus()"
+                                    style="padding: 1px 5px; font-size: 15px; line-height: 1.5; border-radius: 3px; background-color: #2e6da4;color: white;"> Contact Us</button>
+                            </div>
+                            <br>
+                        </div>
+                        
+                        
+                </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </main>
+        <br>
+
+        <footer style="color: white; text-align: left;">
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block;">
+                    <img class="logo" src="assets/IMG/manager_logo.png">
+                </div>
+                <div style="margin-left: auto; font-size: 18px;">
+                    <a (click)="navigateToDisclaimer()" routerLink="/Disclaimer">Disclaimer</a> |
+                    <a (click)="navigateToAboutUs()" routerLink="/AboutUs">About Us</a> |
+                    <a (click)="navigateToschemes()" routerLink="/Schemes">Schemes</a> |
+                    <a (click)="navigateTofeedback()" routerLink="/Feedback">Feedback</a> |
+                    <a routerLink="/EventsCalendar">Events Calendar</a> |
+                    <a routerLink="/PressReleases">Press Releases</a>
+                    <br>
+                    <div style="text-align: right;">
+                        <button (click)="navigateToLogin()"
+                            style="color: #fff; background-color: #5cb85c; border-radius: 5px; font-size: 16px; padding: 10px 20px; border-color: #4cae4c; margin-right: auto;">Support</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block; margin-right: 10px;">
+                    Bheemunipatnam Mutually Aided Co-operative Building Society Ltd., 2443<br>
+                    D.no 10-36-284,Krishna Colony Bus Stop, Krishna Colony, Bheemunipatnam – 531 163<br>
+                    Phone: 08933 - 228234 or 228334 or (+91) 8341327640 / 9642726662
+                </div>
+            </div>
+
+            <p style="color:white;text-align: center;">© 2024 BMACBS.com | All rights reserved | Designed & Developed by BMACBS</p>
+
+        </footer>
+
+
+    </body>
+</form>
+
+</html>

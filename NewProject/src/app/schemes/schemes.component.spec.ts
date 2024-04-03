@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { SchemesComponent } from './schemes.component';
+
+describe('SchemesComponent', () => {
+  let component: SchemesComponent;
+  let fixture: ComponentFixture<SchemesComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [SchemesComponent]
+    });
+    fixture = TestBed.createComponent(SchemesComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

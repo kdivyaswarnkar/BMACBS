@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<form>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MEDIENROLL - Your Page Title</title>
+    </head>
+
+    <body>
+        <header style="color: white; text-align: right;">
+            <div style="float: left;">
+                <img class="logo" src="assets/IMG/manager_logo.png">
+            </div>
+            <p style="color: black; text-align: right; margin-right: auto; font-size: 20px;">Bheemunipatnam Mutually
+                Aided Co-operative Building Society Ltd., 2443</p>
+
+            <button (click)="navigateToLogin()"
+                style="border-radius: 5px; color: #fff; background-color: #337ab7; border-color: #2e6da4; font-size: 16px; padding: 10px 20px;">Member
+                Login</button>
+
+            <div style="background-color: lightgray; text-align: left; padding: 10px 20px; margin-top: 10px;">
+                <button (click)="navigateToHome()" style="width: 80px; height: 40px; font-size: 16px;">Home</button>
+                <button (click)="navigateToAboutUs()" style="width: 90px; height: 40px; font-size: 16px;"> About
+                    Us</button>
+                <button (click)="navigateToschemes()" style="width: 90px; height: 40px; font-size: 16px;">
+                    Schemes</button>
+                <button (click)="navigateToSocietyEvolution()" style="width: auto; height: 40px; font-size: 16px;">
+                    Socity Evolution</button>
+                <button (click)="navigateToMembershipAdmission()"
+                    style="width: 200px; height: 40px; font-size: 16px;">Membership Admission</button>
+                <button (click)="navigateToManagenebtboard()" style="width: auto; height: 40px; font-size: 16px;">
+                    Management Board</button>
+                <button (click)="navigateToBasicStatitics()" style="width: 120px; height: 40px; font-size: 16px;"> Basic
+                    Statitics</button>
+                <button (click)="navigateTocontactus()" style="width: auto; height: 40px; font-size: 16px;"> Contact
+                    us</button>
+                <button (click)="navigateTogallery()" style="width: 90px; height: 40px; font-size: 16px;">
+                    Gallery</button>
+                <button (click)="navigateTofeedback()" style="width: 90px; height: 40px; font-size: 16px;">
+                    Feedback</button>
+            </div>
+        </header>
+        <br>
+        <main>
+            <div class="container">
+                <h1
+                    style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">
+                    Management Board</h1>
+                <div class="left-column">
+                    <div *ngIf="isAnnexure2">
+                        <app-annexure2></app-annexure2>
+                    </div>
+                    <div *ngIf="isAnnexure1">
+                        <app-annexure1></app-annexure1>
+                    </div>
+                    <div *ngIf="isManagement">
+                        <app-management></app-management>
+                    </div>
+                    <div *ngIf="isAnnexure3">
+                        <app-annexure3></app-annexure3>
+                    </div>
+
+                </div>
+
+                <div class="right-column">
+                    <h2
+                        style="padding: 10px; margin: 0; border-bottom: 1px solid #cdcdcd; color: #3D1567; text-align: left;">
+                        List of Annexures</h2>
+                    <br>
+                    <div class="box1">
+                        <div style="display: flex; flex-direction: column; align-items: lef; font-size: 15px;">
+                            <a (click)="enableManagementBoard('Management Board')"
+                                style="padding: 8px; margin: 0;color: blue; border-bottom: 1px solid #cdcdcd;">Management
+                                Board</a>
+                            <a style="padding: 8px; margin: 0;color:  blue; border-bottom: 1px solid #cdcdcd;"
+                                (click)="enableManagementBoard('Annexure-1 - A profile of the Directors of the Management Board as on 25-04-2021')">Annexure-1
+                                - A profile of the Directors of the Management Board as on 25-04-2021</a>
+                            <a style="padding: 8px; margin: 0;color:  blue; border-bottom: 1px solid #cdcdcd; "
+                                (click)="enableManagementBoard('Annexure-2 - Election Council')">Annexure-2 - Election
+                                Council</a>
+                            <a style="padding: 8px; margin: 0;color:  blue; border-bottom: 1px solid #cdcdcd;  "
+                                (click)="enableManagementBoard('Annexure-3 - The Committees of the Society')">Annexure-3
+                                - The Committees of the Society</a>
+                            <a  href="javascript:void(0);" (click)="openDocument1()" style="padding: 8px; margin: 0; color:  blue; border-bottom: 1px solid #cdcdcd;">Annexure-4
+                                - Guidelines to hold elections to the Management Board of the Society</a>
+                            <a href="javascript:void(0);" (click)="openDocument()"
+                                style="padding: 8px; margin: 0; color: blue;">Annexure-5 - List of Members Eligible to
+                                Cast the vote for the elections to the management board</a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </main>
+        <br>
+        <br>
+        <footer style="color: white; text-align: left;">
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block;">
+                    <img class="logo" src="assets/IMG/manager_logo.png">
+                </div>
+                <div style="margin-left: auto; font-size: 18px;">
+                    <a (click)="navigateToDisclaimer()">Disclaimer</a> |
+                    <a (click)="navigateToAboutUs()">About Us</a> |
+                    <a (click)="navigateToschemes()">Schemes</a> |
+                    <a (click)="navigateTofeedback()">Feedback</a> |
+                    <a>Events Calendar</a> |
+                    <a>Press Releases</a>
+                    <br>
+                    <div style="text-align: right;">
+                        <button (click)="navigateToLogin()"
+                            style="color: #fff; background-color: #5cb85c; border-radius: 5px; font-size: 16px; padding: 10px 20px; border-color: #4cae4c; margin-right: auto;">Support</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="display: flex; align-items: flex-start;">
+                <div style="display: block; margin-right: 10px;">
+                    Bheemunipatnam Mutually Aided Co-operative Building Society Ltd., 2443<br>
+                    D.no 10-36-284,Krishna Colony Bus Stop, Krishna Colony, Bheemunipatnam – 531 163<br>
+                    Phone: 08933 - 228234 or 228334 or (+91) 8341327640 / 9642726662
+                </div>
+            </div>
+
+            <p style="color:white;text-align: center;">© 2024 BMACBS.com | All rights reserved | Designed & Developed by
+                BMACBS</p>
+
+        </footer>
+
+
+    </body>
+</form>
+
+</html>

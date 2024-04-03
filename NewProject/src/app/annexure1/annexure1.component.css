@@ -1,0 +1,5 @@
+.Logo {
+    width: 8vw; /* 50% of the viewport width */
+    /* max-width: 1306px; Maximum width of 1306px */
+    height: auto; /* Maintain aspect ratio */
+}
